@@ -1,0 +1,58 @@
+{
+  "name": "authorization-server",
+  "version": "1.0.0",
+  "description": "oauth2 authorize",
+  "private": true,
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "egg": "^1.2.1",
+    "egg-jwt": "^1.1.0",
+    "egg-mysql": "^3.0.0",
+    "egg-passport": "^1.0.0",
+    "egg-session": "^2.1.0",
+    "egg-view": "^1.1.0",
+    "egg-view-ejs": "^1.1.0",
+    "jsonwebtoken": "^7.4.1",
+    "moment": "^2.18.1",
+    "oauth2orize": "^1.8.0",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "passport-oauth2-client-password": "^0.1.2",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "autod": "^2.8.0",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^3.3.2",
+    "egg-ci": "^1.6.0",
+    "egg-mock": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-egg": "^4.1.0",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "egg-bin dev --port 3000",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "6"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "yehq",
+  "license": "MIT"
+}
